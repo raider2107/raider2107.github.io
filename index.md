@@ -31,8 +31,8 @@ In activate connection choose the second NC that we have created previously and 
   ![](/img/clone_1.png)     
   4. Create the new NC for the clone as in step3 but change it's IP address, for example i've set it to: 192.168.100.11  
   **5) Restart the VM**    
-  **6) Now we are able to connect to our VM, but first we need to install the Virtual Box Extension that we've downloaded in the begining.**    
-  Press **CTRL + g** go to **Extensions** and add that downloaded package and finish the installiation. All VMs need to be turned off !  
+  **6) Now we are able to connect to our VM, but first we need to install the Virtual Box Extension that we've downloaded in the beginning.**    
+  Press **CTRL + g** go to **Extensions** and add that downloaded package and finish the installation. All VMs need to be turned off !  
   Set the port # for the first VM, and use the Remote Desktop Connection App to connect (app included in Win10)   
   ![](/img/ports.png)
   And we connected successfully:  

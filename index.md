@@ -1,37 +1,12 @@
-## Welcome to GitHub Pages
+## Making a private cloud with Virtual Box
+In this lab we are going to learn how to install, configure and understand how the cloud technology work. I'm usingn Win10 as a host computer and Ubuntu for Virtual machine. For virtualization in this example i use Virtual Box, we can use VMware as well(almost same). You can donwload all the above software in the links below: 
+https://ubuntu.com/download/desktop
+https://www.virtualbox.org/wiki/Downloads
+https://download.virtualbox.org/virtualbox/
+1) First do the installation of Virtual Box and install Ubuntu on it. I will not describe in details these steps, lots of materials out there, one of them https://www.lifewire.com/run-ubuntu-within-windows-virtualbox-2202098
+2) Set the path to your virtual machine by pressing Ctrl + g
 
-You can use the [editor on GitHub](https://github.com/raider2107/raider2107.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+3)Create a Virtual Networks within Virtual Machine
+I've created Adapter #2 and set the IPv4 to :192.168.100.1
+When you apply the changes, you can check from your host in cmd
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/raider2107/raider2107.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.

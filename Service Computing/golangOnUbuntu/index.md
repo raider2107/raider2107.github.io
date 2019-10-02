@@ -46,7 +46,8 @@ This will create a folder MyGoLangTest and `init` will initialize it as a reposi
  Then we can write our code:  
  `code hello.go` -will open a VScode  
  Code:  
- ```package main    
+ ```go      
+ package main      
 
 import "fmt"    
 

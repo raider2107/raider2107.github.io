@@ -1,5 +1,5 @@
 
-## Installing and setting up the Environment for Go language on Ubuntu 18.04 in 8 Steps    
+## Installing And Setting Up Go language Environment on Ubuntu 18.04 in 8 Steps    
 
 1) Download the latest version of Go from [official website](https://golang.org/dl/)  
 2) In terminal install the downloaded package with this command:  

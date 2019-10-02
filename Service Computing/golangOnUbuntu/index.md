@@ -25,17 +25,50 @@ Another way of downloading Go is directly from the terminal, but it downloads th
   `go env`  
   ![](/img/env.png)  
     
-6) Install [git](https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-18-04) and download `go` tools:  
+6) Install [git](https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-18-04) and download `go` tools:    
 `mkdir $GOPATH/src/golang.org/x/`  
 `go get -d github.com/golang/tools`  
 `cp $GOPATH/src/github.com/golang/tools $GOPATH/src/golang.org/x/ -rf`  
 `go install golang.org/x/tools/go/buildutil`  
 7) To write a code we need an editor and in this example i use VScode, Visual Studio Code is a lightweight but powerful source code editor that runs on Windows, macOS and Linux desktops. It has built-in support for JavaScript, TypeScript and Node.js, and provides a rich extended ecosystem for other languages (such as C++, C#, Java, Python, PHP, Go) and runtime (such as. NET and Unity). Just download the `.deb` package from [VScode official website](https://code.visualstudio.com/download) and do the same as in step2.  
 8) And the last, we write our first `Hello World` programm and upload it to our repo on github.  
-First configure github:  
+First configure github from terminal:  
 `git config --global user.name "user_name"`  
 `git config --global user.email "email_id"`  
-Create local repo in the path: `$GOPATH/src/github.com/github-user/` where github-user
+In directory:`$GOPATH/src/github.com/github-user/`(github-user is your Github username) create local repo:  
+`git init MyGoLangTest`  
+This will create a folder MyGoLangTest and `init` will initialize it as a repository.  
+  
+  ![](/img/path.png)  
+    
+ Then we can write our code:  
+ `code hello.go` -will open a VScode  
+ Code:  
+ `package main
+
+import "fmt"
+
+func main() {
+    fmt.Printf("Hello World!\n")
+} `  
+At terminal:  
+`go run hello.go`  
+`go install github.com/raider2107/MyGolangTest' (change the path)  
+`MyGolangTest`  
+![](/img/terminal.png)  
+  
+ Upload to To Github:  
+ `git add .`  
+ `git commit -m 'test'`  
+ Then go to github.com and create a new repository, the name must be the same as your local repository (MyGolangTest in my case). Once you created, we can push the contents of the local repo onto the GitHub repository in your profile. Connect to repository using this command:  
+`git remote add origin https://github.com/user_name/Mytest.git`  
+change `the user_name` to your Github username and repo name to one that you have created previously.  
+The final step is to push the local repository contents into the remote host repository (GitHub), by using the command:  
+`git push origin master`  
+Enter the login credentials and you are done. 
+  
+ 
+ 
   
   
 

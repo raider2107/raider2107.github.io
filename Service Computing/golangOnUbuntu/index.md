@@ -1,5 +1,5 @@
 
-## Installing and setting up the Environment for Go language on Ubuntu 18.04 in **8 Steps** 
+## Installing and setting up the Environment for Go language on Ubuntu 18.04 in 8 Steps    
 
 1) Download the latest version of Go from [official website](https://golang.org/dl/)  
 2) In terminal install the downloaded package with this command:  
@@ -39,7 +39,7 @@ First configure github from terminal:
 `git config --global user.email "email_id"`  
 In directory:`$GOPATH/src/github.com/github-user/`(github-user is your Github username) create local repo:  
 `git init MyGoLangTest`  
-This will create a folder MyGoLangTest and `init` will initialize it as a repository.  
+This will create a folder MyGolangTest and `init` will initialize it as a repository.  
   
   ![](/img/path.png)  
     
@@ -52,7 +52,7 @@ This will create a folder MyGoLangTest and `init` will initialize it as a reposi
 import "fmt"    
 
 func main() {  
-    `fmt.Printf("Hello World!\n")    
+    `fmt.Printf("Hello World\n")    
 }   
 ```          
 In terminal:  

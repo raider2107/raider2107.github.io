@@ -8,7 +8,7 @@ Another way of downloading Go is directly from the terminal, but it downloads th
 `sudo apt-get install golang`  
 3) Check the version:  
 `go version`  
-![](/img/version.png)  
+![](/img/version.png) 
 
 4) Now it's time to set the environment variables, (1) open up the terminal and type these commands:  
  `mkdir -p $HOME/go-workspace/src`    

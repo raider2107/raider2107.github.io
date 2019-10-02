@@ -1,5 +1,5 @@
 
-## Installing and setting up the Environment for Go language on Ubuntu 18.04  
+## Installing and setting up the Environment for Go language on Ubuntu 18.04 in **8 Steps** 
 
 1) Download the latest version of Go from [official website](https://golang.org/dl/)  
 2) In terminal install the downloaded package with this command:  
@@ -66,10 +66,11 @@ In terminal:
  `git commit -m 'test'`  
  Then go to [github.com](https://github.com/) and create a new repository, the name must be the same as your local repository (MyGolangTest in my case). Once you created, we can push the contents of the local repo onto the GitHub repository in your profile. Connect to repository using this command:  
 `git remote add origin https://github.com/user_name/Mytest.git`  
-change `the user_name` to your Github username and repo name to one that you have created previously.  
+change `the user_name` to your Github username and repo name to one that you have created previously. In my case it will be:  
+`git remote add origin https://github.com/raider2107/MyGolangTest.git`  
 The final step is to push the local repository contents into the remote host repository (GitHub), by using the command:  
 `git push origin master`  
-Enter the login credentials and you are done. 
+And **finaly** enter the login credentials.   
   
  
  

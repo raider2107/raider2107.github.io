@@ -16,11 +16,11 @@ Another way of downloading Go is directly from the terminal, but it downloads th
  `mkdir -p $HOME/go-workspace/pkg`  
 
  `mkdir -p $HOME/go-workspace/bin`  
- (2) `sudo nano $HOME/.bashrc  
- Paste these lines and save the file:  
-`export GOROOT=/usr/local/go `  
-`export GOPATH=$HOME/go-workspace`  
-`export PATH=$PATH:$GOROOT/bin:$GOPATH/bin`  
+ (2) `sudo nano $HOME/.bashrc`  
+ Paste these lines and save the file:    
+`export GOROOT=/usr/local/go`    
+`export GOPATH=$HOME/go-workspace`    
+`export PATH=$PATH:$GOROOT/bin:$GOPATH/bin`    
   
   (3)In terminal: `source $HOME/.bashrc`  
   5) Check all the environments configurations:  
@@ -46,13 +46,13 @@ This will create a folder MyGoLangTest and `init` will initialize it as a reposi
  Then we can write our code:  
  `code hello.go` -will open a VScode  
  Code:  
- `package main`  
+ ```package main    
 
-`import "fmt"`  
+import "fmt"    
 
-`func main() {`  
-    `fmt.Printf("Hello World!\n")`  
-`} `    
+func main() {  
+    `fmt.Printf("Hello World!\n")    
+}```        
 In terminal:  
 `go run hello.go`  
 `go install github.com/raider2107/MyGolangTest` (change your own path)  

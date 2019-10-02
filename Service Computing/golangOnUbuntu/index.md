@@ -8,17 +8,19 @@ Another way of downloading Go is directly from the terminal, but it downloads th
 `sudo apt-get install golang`  
 3) Check the version:  
 `go version`  
+![](/ing/version.png)  
+
 4) Now it's time to set the environment variables, (1) open up the terminal and type these commands:  
  `mkdir -p $HOME/go-workspace/src`    
 
  `mkdir -p $HOME/go-workspace/pkg`  
 
  `mkdir -p $HOME/go-workspace/bin`  
- (2) sudo nano $HOME/.bashrc  
+ (2) `sudo nano $HOME/.bashrc  
  Paste these lines and save the file:  
-`export GOROOT=/usr/local/go   `
-`export GOPATH=$HOME/go-workspace   `
-`export PATH=$PATH:$GOROOT/bin:$GOPATH/bin  `
+`export GOROOT=/usr/local/go `  
+`export GOPATH=$HOME/go-workspace`  
+`export PATH=$PATH:$GOROOT/bin:$GOPATH/bin`  
   
   (3)In terminal: `source $HOME/.bashrc`  
   5) Check all the environments configurations:  
@@ -44,23 +46,23 @@ This will create a folder MyGoLangTest and `init` will initialize it as a reposi
  Then we can write our code:  
  `code hello.go` -will open a VScode  
  Code:  
- `package main
+ `package main`  
 
-import "fmt"
+`import "fmt"`  
 
-func main() {
-    fmt.Printf("Hello World!\n")
-} `  
-At terminal:  
+`func main() {`  
+    `fmt.Printf("Hello World!\n")`  
+`} `    
+In terminal:  
 `go run hello.go`  
-`go install github.com/raider2107/MyGolangTest' (change the path)  
+`go install github.com/raider2107/MyGolangTest` (change your own path)  
 `MyGolangTest`  
 ![](/img/terminal.png)  
   
  Upload to To Github:  
  `git add .`  
  `git commit -m 'test'`  
- Then go to github.com and create a new repository, the name must be the same as your local repository (MyGolangTest in my case). Once you created, we can push the contents of the local repo onto the GitHub repository in your profile. Connect to repository using this command:  
+ Then go to [github.com](https://github.com/) and create a new repository, the name must be the same as your local repository (MyGolangTest in my case). Once you created, we can push the contents of the local repo onto the GitHub repository in your profile. Connect to repository using this command:  
 `git remote add origin https://github.com/user_name/Mytest.git`  
 change `the user_name` to your Github username and repo name to one that you have created previously.  
 The final step is to push the local repository contents into the remote host repository (GitHub), by using the command:  

@@ -25,7 +25,7 @@ Another way of downloading Go is directly from the terminal, but it downloads th
   (3)In terminal: `source $HOME/.bashrc`  
   5) Check all the environments configurations:  
   `go env`  
-  ![](/img/env.png)  
+  ![](./img/env.png)  
     
 6) Install [git](https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-18-04) and download `go` tools:    
 `mkdir $GOPATH/src/golang.org/x/`  
@@ -41,7 +41,7 @@ In directory:`$GOPATH/src/github.com/github-user/`(github-user is your Github us
 `git init MyGoLangTest`  
 This will create a folder MyGolangTest and `init` will initialize it as a repository.  
   
-  ![](/img/path.png)  
+  ![](./img/path.png)  
     
  Then we can write our code:  
  `code hello.go` -will open a VScode  
@@ -59,7 +59,7 @@ In terminal:
 `go run hello.go`  
 `go install github.com/raider2107/MyGolangTest` (change your own path)  
 `MyGolangTest`  
-![](/img/terminal.png)  
+![](./img/terminal.png)  
   
  Upload to To Github:  
  `git add .`  

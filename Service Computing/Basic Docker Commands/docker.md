@@ -59,7 +59,7 @@ $ sudo apt-get install docker-ce=5:19.03.5~3-0~ubuntu-bionic docker-ce-cli=5:19.
 
 Up until now the installation is finished, and can check the Docker version. As we can see, we have some permission problem. In fact this problem can cause other troubles when creating a new image etc. so we have to fix it first.
 
-![image-20191227215941656](/home/raider21/.config/Typora/typora-user-images/image-20191227215941656.png)
+![image-20191227215941656](image-20191227215941656.png)
 
 To fix the above problem, you just type these commands: 
 
@@ -72,13 +72,13 @@ $ sudo service docker restart
 
 Now let's run our first Docker Hello World
 
-![image-20191227221114953](/home/raider21/.config/Typora/typora-user-images/image-20191227221114953.png)
+![image-20191227221114953](image-20191227221114953.png)
 
 The above output means everything is correct till now. 
 
 With `docker` command we can get all main commands of docker 
 
-![image-20191227221405902](/home/raider21/.config/Typora/typora-user-images/image-20191227221405902.png)
+![image-20191227221405902](image-20191227221405902.png)
 
 Container usage:
 
@@ -96,17 +96,17 @@ $ docker run -it ubuntu /bin/bash
 
 In Docker, the relationship between image and container is like a class and instance of a class in OOP, i.e image is a class and container is an object. 
 
-![image-20191227222233428](/home/raider21/.config/Typora/typora-user-images/image-20191227222233428.png)
+![image-20191227222233428](image-20191227222233428.png)
 
 exit for e exiting the container. 
 
 With these commands, we are able to check the status of the containers, their amount, ID etc.  And use `start` command + container ID to start the container, see the below image: 
 
-![image-20191227223004005](/home/raider21/.config/Typora/typora-user-images/image-20191227223004005.png)
+![image-20191227223004005](image-20191227223004005.png)
 
 with `stop` command + ID we can stop particular container, 
 
-![image-20191227223122710](/home/raider21/.config/Typora/typora-user-images/image-20191227223122710.png)
+![image-20191227223122710](image-20191227223122710.png)
 
 
 
@@ -136,7 +136,7 @@ $ docker rm -f 1e560fca3906 ##container ID
 
 Running the first WEB application 
 
-![image-20191227224110063](/home/raider21/.config/Typora/typora-user-images/image-20191227224110063.png)
+![image-20191227224110063](image-20191227224110063.png)
 
 as you can see, I had connection issues at first. With use of VPN i was able to successfuly pull that. 
 
@@ -144,7 +144,7 @@ as you can see, I had connection issues at first. With use of VPN i was able to 
 docker run -d -P training/webapp python app.py
 ```
 
-![image-20191227224359279](/home/raider21/.config/Typora/typora-user-images/image-20191227224359279.png)
+![image-20191227224359279](image-20191227224359279.png)
 
 we can see our running container. 
 
@@ -152,17 +152,17 @@ Above have `PORTS` column. Docker opens port number 5000 and maps it to host's 3
 
 In browser  we can access demo web application
 
-![image-20191227224821018](/home/raider21/.config/Typora/typora-user-images/image-20191227224821018.png)
+![image-20191227224821018](image-20191227224821018.png)
 
 To stop the web app simply type 
 
-![image-20191227225052508](/home/raider21/.config/Typora/typora-user-images/image-20191227225052508.png)
+![image-20191227225052508](image-20191227225052508.png)
 
-![image-20191227225107910](/home/raider21/.config/Typora/typora-user-images/image-20191227225107910.png)
+![image-20191227225107910](image-20191227225107910.png)
 
 Installing MySQL on Docker 
 
-![image-20191227230511708](/home/raider21/.config/Typora/typora-user-images/image-20191227230511708.png)
+![image-20191227230511708](image-20191227230511708.png)
 
 
 
@@ -176,13 +176,13 @@ here **-p 3306:3306** flag is maps 3306 port of container service to 3306 port o
 
 **MYSQL_ROOT_PASSWORD=123456** is setting a password for the root user
 
-![image-20191227230657477](/home/raider21/.config/Typora/typora-user-images/image-20191227230657477.png)
+![image-20191227230657477](image-20191227230657477.png)
 
 successfully created MySQL instance. 
 
 Now we can access it from terminal and work with MySQL
 
-![image-20191227231335682](/home/raider21/.config/Typora/typora-user-images/image-20191227231335682.png)
+![image-20191227231335682](image-20191227231335682.png)
 
 
 
